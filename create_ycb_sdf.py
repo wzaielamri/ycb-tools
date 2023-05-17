@@ -63,14 +63,18 @@ if __name__=="__main__":
                 model_folder = os.path.join(args.ycb_folder, model_long)
 
                 # Check if there are Google meshes; else use the TSDF folder
-                if "google_16k" in os.listdir(model_folder):
-                    mesh_type = "google_16k"
+                google_mesh="google_512k"
+                if google_mesh in os.listdir(model_folder):
+                    mesh_type = google_mesh
+                elif "google_64k" in os.listdir(model_folder):
+                    google_mesh = "google_64k"
+                    mesh_type = google_mesh
                 else:
                     mesh_type = "tsdf"
 
                 # Extract key data from the mesh
-                if mesh_type == "google_16k":
-                    mesh_file = os.path.join(model_folder, "google_16k", "textured.obj")
+                if mesh_type == google_mesh:
+                    mesh_file = os.path.join(model_folder, google_mesh, "textured.obj")
                 elif mesh_type == "tsdf":
                     mesh_file = os.path.join(model_folder, "tsdf", "textured.obj")
                 mesh = trimesh.load(mesh_file)
@@ -121,7 +125,7 @@ if __name__=="__main__":
                     f.write(model_text)
 
                 # Copy and modify the material file template
-                if mesh_type == "google_16k":
+                if mesh_type == google_mesh:
                     texture_file = "texture_map.png"
                 elif mesh_type == "tsdf":
                     texture_file = "textured.png"

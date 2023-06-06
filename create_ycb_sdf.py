@@ -69,6 +69,9 @@ if __name__=="__main__":
                 elif "google_64k" in os.listdir(model_folder):
                     google_mesh = "google_64k"
                     mesh_type = google_mesh
+                elif "google_16k" in os.listdir(model_folder):
+                    google_mesh = "google_16k"
+                    mesh_type = google_mesh
                 else:
                     mesh_type = "tsdf"
 

@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<robot name="rubiks_cube">
+  <link name="rubiks_cube__link">
+    <inertial>
+      <mass value="0.00018287731685751214"/>
+      <origin xyz="-0.01621 -0.00048  0.02859" rpy="2.36483 -0.16473 -2.66928"/>
+      <inertia ixx="9.852040380736427e-08" ixy="-1.6333630333633253e-23" ixz="-7.274459169165912e-26" iyy="9.833577391876147e-08" iyz="-1.0621281289784712e-23" izz="9.818197457535548e-08"/>
+    </inertial>
+    <collision name="rubiks_cube__collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/077_rubiks_cube/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+    <visual name="rubiks_cube__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/077_rubiks_cube/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>

@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<robot name="knife">
+  <link name="knife__link">
+    <inertial>
+      <mass value="2.1835475900861335e-05"/>
+      <origin xyz="0.00844 -0.02909  0.005" rpy="1.80022  1.34727 -1.35182"/>
+      <inertia ixx="8.208165528866134e-08" ixy="7.25407306655601e-24" ixz="-2.1097426477050032e-24" iyy="8.190889709718921e-08" iyz="2.4898310344169898e-25" izz="5.818794340795604e-10"/>
+    </inertial>
+    <collision name="knife__collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/032_knife/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+    <visual name="knife__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/032_knife/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>

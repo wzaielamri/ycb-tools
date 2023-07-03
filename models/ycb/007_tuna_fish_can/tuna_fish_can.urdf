@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<robot name="tuna_fish_can">
+  <link name="tuna_fish_can__link">
+    <inertial>
+      <mass value="0.00015261883396786033"/>
+      <origin xyz="-0.02599 -0.02214  0.01299" rpy="-0.44845 -1.57058  0.21285"/>
+      <inertia ixx="1.3941298546481145e-07" ixy="1.7369963509225143e-23" ixz="7.060086528480475e-24" iyy="7.961242909265215e-08" iyz="3.583045805664997e-24" izz="7.95176554640844e-08"/>
+    </inertial>
+    <collision name="tuna_fish_can__collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/007_tuna_fish_can/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+    <visual name="tuna_fish_can__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/007_tuna_fish_can/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>

@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<robot name="spoon">
+  <link name="spoon__link">
+    <inertial>
+      <mass value="2.432101198831533e-05"/>
+      <origin xyz="-0.01805 -0.01016  0.01004" rpy="-1.02657 -1.51554  0.68029"/>
+      <inertia ixx="9.096196827439227e-08" ixy="-7.200644007815797e-24" ixz="4.550002286666198e-25" iyy="9.038583292816066e-08" iyz="1.7627585305145206e-23" izz="1.1819371187282648e-09"/>
+    </inertial>
+    <collision name="spoon__collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/031_spoon/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+    <visual name="spoon__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/031_spoon/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>

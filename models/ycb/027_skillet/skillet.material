@@ -1,0 +1,14 @@
+material skillet
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../027_skillet/google_16k/texture_map.png
+      }
+    }
+  }
+}

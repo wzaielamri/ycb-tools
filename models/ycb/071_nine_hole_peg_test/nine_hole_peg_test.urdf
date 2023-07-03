@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<robot name="nine_hole_peg_test">
+  <link name="nine_hole_peg_test__link">
+    <inertial>
+      <mass value="0.0006265859969762233"/>
+      <origin xyz="-0.00018  0.02437  0.01995" rpy="-0.57319 -1.56825 -1.21424"/>
+      <inertia ixx="1.6556355079461083e-06" ixy="4.239371022483215e-24" ixz="5.0692044608912555e-24" iyy="9.576057723576263e-07" iyz="-1.329328259014097e-23" izz="8.65277925286308e-07"/>
+    </inertial>
+    <collision name="nine_hole_peg_test__collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/071_nine_hole_peg_test/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+    <visual name="nine_hole_peg_test__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/071_nine_hole_peg_test/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>

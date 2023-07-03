@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<robot name="a_colored_wood_blocks">
+  <link name="a_colored_wood_blocks__link">
+    <inertial>
+      <mass value="0.0023463367230017076"/>
+      <origin xyz="0.02119 0.00854 0.0739" rpy="3.11867 0.03979 2.83663"/>
+      <inertia ixx="7.759890525927938e-06" ixy="5.061515920705564e-22" ixz="1.0834387053410328e-22" iyy="7.470598943639883e-06" iyz="2.871960641766511e-22" izz="6.172891559358147e-06"/>
+    </inertial>
+    <collision name="a_colored_wood_blocks__collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/070-a_colored_wood_blocks/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+    <visual name="a_colored_wood_blocks__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/070-a_colored_wood_blocks/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>

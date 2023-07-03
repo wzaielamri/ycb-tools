@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="pudding_box">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.0015176495741759271 0.018795882107541014 0.01865770198611293 -2.8468447010426696 -1.546957833673844 -2.9506144314638783</pose> 
+        <mass>0.00034177208377669197</mass>
+        <inertia>
+          <ixx>5.514501243481536e-07</ixx>
+          <ixy>-2.5122907294555473e-23</ixy>
+          <ixz>3.0872621709290617e-24</ixz>
+          <iyy>3.7221284971339426e-07</iyy>
+          <iyz>-2.5537610425232615e-23</iyz>
+          <izz>2.5064605144990336e-07</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://008_pudding_box/google_16k/textured.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://008_pudding_box/google_16k/textured.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://008_pudding_box/pudding_box.material</uri>
+            <name>pudding_box</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

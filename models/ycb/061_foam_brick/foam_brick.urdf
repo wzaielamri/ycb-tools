@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<robot name="foam_brick">
+  <link name="foam_brick__link">
+    <inertial>
+      <mass value="0.0001849265625643083"/>
+      <origin xyz="-0.01862  0.01695  0.02464" rpy="1.20714  1.52175 -0.37887"/>
+      <inertia ixx="1.284387350358337e-07" ixy="3.094412123039449e-25" ixz="1.021540261231475e-23" iyy="1.2522943492836717e-07" iyz="2.700424846838656e-25" izz="7.768642722539466e-08"/>
+    </inertial>
+    <collision name="foam_brick__collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/061_foam_brick/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+    <visual name="foam_brick__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/061_foam_brick/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>

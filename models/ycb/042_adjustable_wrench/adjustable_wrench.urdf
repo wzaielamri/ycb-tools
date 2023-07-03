@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<robot name="adjustable_wrench">
+  <link name="adjustable_wrench__link">
+    <inertial>
+      <mass value="1.9821730387476e-05"/>
+      <origin xyz="0.0145  -0.04966  0.00425" rpy="-2.12104 -1.53407  1.05767"/>
+      <inertia ixx="4.68812164277712e-08" ixy="3.8774165504407324e-25" ixz="-1.9590322186801725e-24" iyy="4.282249507787251e-08" iyz="-8.447272682129152e-24" izz="4.257478965991318e-09"/>
+    </inertial>
+    <collision name="adjustable_wrench__collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/042_adjustable_wrench/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+    <visual name="adjustable_wrench__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/042_adjustable_wrench/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>

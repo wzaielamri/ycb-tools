@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<robot name="hammer">
+  <link name="hammer__link">
+    <inertial>
+      <mass value="0.00025894043237553564"/>
+      <origin xyz="-0.02857 -0.01267  0.01565" rpy="-1.39221 -1.54397  0.18273"/>
+      <inertia ixx="3.0777686441060457e-06" ixy="8.410707534455588e-23" ixz="-6.796790692735606e-22" iyy="3.0006065150009717e-06" iyz="1.443135547075963e-23" izz="9.993910910349302e-08"/>
+    </inertial>
+    <collision name="hammer__collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/048_hammer/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+    <visual name="hammer__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/048_hammer/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>

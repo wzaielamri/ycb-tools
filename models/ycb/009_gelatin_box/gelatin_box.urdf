@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<robot name="gelatin_box">
+  <link name="gelatin_box__link">
+    <inertial>
+      <mass value="0.0001730558194301085"/>
+      <origin xyz="-0.02267 -0.00786  0.01387" rpy="-0.38129 -1.56533 -0.96148"/>
+      <inertia ixx="1.808808464126736e-07" ixy="6.113115423463839e-25" ixz="-1.4814788129171623e-24" iyy="1.1880213011661254e-07" iyz="-1.4283454914444106e-23" izz="8.422039755656733e-08"/>
+    </inertial>
+    <collision name="gelatin_box__collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/009_gelatin_box/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+    <visual name="gelatin_box__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/009_gelatin_box/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>

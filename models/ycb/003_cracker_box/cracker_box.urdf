@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<robot name="cracker_box">
+  <link name="cracker_box__link">
+    <inertial>
+      <mass value="0.0021732875685518717"/>
+      <origin xyz="-0.01485 -0.0142   0.1022" rpy="3.13359 0.01094 3.14097"/>
+      <inertia ixx="1.2667764335249041e-05" ixy="4.58140351818436e-24" ixz="-2.9687768011863484e-23" iyy="8.895223860935137e-06" iyz="6.7956540305247395e-22" izz="5.284067250610001e-06"/>
+    </inertial>
+    <collision name="cracker_box__collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/003_cracker_box/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+    <visual name="cracker_box__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/003_cracker_box/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>

@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<robot name="large_clamp">
+  <link name="large_clamp__link">
+    <inertial>
+      <mass value="8.957919455253866e-05"/>
+      <origin xyz="-0.00238 -0.02157  0.01743" rpy="-0.94828 -1.46328 -0.44275"/>
+      <inertia ixx="2.0772067330097753e-07" ixy="1.7382096780310395e-24" ixz="-2.6719661914586575e-23" iyy="1.4247370393773436e-07" iyz="7.394304757812386e-24" izz="7.6838557842963e-08"/>
+    </inertial>
+    <collision name="large_clamp__collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/051_large_clamp/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+    <visual name="large_clamp__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/051_large_clamp/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>

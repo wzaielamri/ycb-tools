@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<robot name="banana">
+  <link name="banana__link">
+    <inertial>
+      <mass value="0.00017153252062943915"/>
+      <origin xyz="-0.00993  0.00407  0.01712" rpy="-1.55427 -1.36969 -0.33629"/>
+      <inertia ixx="4.271994641930724e-07" ixy="-1.7823337363110867e-23" ixz="5.562450029839042e-23" iyy="4.1076640307383183e-07" iyz="-4.672131936928927e-23" izz="4.075387802083207e-08"/>
+    </inertial>
+    <collision name="banana__collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/011_banana/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+    <visual name="banana__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/011_banana/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>

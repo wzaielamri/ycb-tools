@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<robot name="bleach_cleanser">
+  <link name="bleach_cleanser__link">
+    <inertial>
+      <mass value="0.0009723430520036825"/>
+      <origin xyz="-0.01713  0.01157  0.09969" rpy="-3.07106e+00  1.10000e-04  1.56036e+00"/>
+      <inertia ixx="4.566127982914433e-06" ixy="-1.0214631767611452e-22" ixz="7.678602056735284e-22" iyy="4.251487136560935e-06" iyz="-8.625202520131832e-23" izz="7.652924492717372e-07"/>
+    </inertial>
+    <collision name="bleach_cleanser__collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/021_bleach_cleanser/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+    <visual name="bleach_cleanser__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/021_bleach_cleanser/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>

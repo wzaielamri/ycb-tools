@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<robot name="bowl">
+  <link name="bowl__link">
+    <inertial>
+      <mass value="3.335824015809766e-05"/>
+      <origin xyz="-0.01427 -0.04572  0.02677" rpy="-2.62673 -1.54929  1.54808"/>
+      <inertia ixx="1.3112180307477242e-07" ixy="5.908628173857177e-25" ixz="-6.691730315089617e-25" iyy="7.919484753160425e-08" iyz="1.3458108552473522e-23" izz="7.620043698791455e-08"/>
+    </inertial>
+    <collision name="bowl__collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/024_bowl/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+    <visual name="bowl__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/024_bowl/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>

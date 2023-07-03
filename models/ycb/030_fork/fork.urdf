@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<robot name="fork">
+  <link name="fork__link">
+    <inertial>
+      <mass value="1.9601593273736498e-05"/>
+      <origin xyz="0.0085  -0.02153  0.0067" rpy="1.67966  1.44552 -1.46381"/>
+      <inertia ixx="4.7220439312838285e-08" ixy="8.521920599046536e-24" ixz="2.5538437139618945e-25" iyy="4.692445702053863e-08" iyz="9.476609873368932e-27" izz="6.556117942788105e-10"/>
+    </inertial>
+    <collision name="fork__collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/030_fork/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+    <visual name="fork__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/030_fork/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>

@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<robot name="b_marbles">
+  <link name="b_marbles__link">
+    <inertial>
+      <mass value="2.1892524856952828e-05"/>
+      <origin xyz="-0.00911 -0.04511  0.01684" rpy="2.26208 -1.3669  -1.82733"/>
+      <inertia ixx="2.6656817093021055e-09" ixy="2.081609043638079e-25" ixz="7.009411450699954e-26" iyy="2.6330367997063807e-09" iyz="6.648834274112354e-25" izz="2.6154036321065128e-09"/>
+    </inertial>
+    <collision name="b_marbles__collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/063-b_marbles/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+    <visual name="b_marbles__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/063-b_marbles/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>

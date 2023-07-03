@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<robot name="golf_ball">
+  <link name="golf_ball__link">
+    <inertial>
+      <mass value="4.0280065824670666e-05"/>
+      <origin xyz="-0.00652 -0.03041  0.02092" rpy="1.26248 -1.47605 -1.14352"/>
+      <inertia ixx="7.301734199252707e-09" ixy="2.5645338662034227e-24" ixz="-2.0659127749397572e-25" iyy="7.281135817609492e-09" iyz="3.098940165294072e-25" izz="7.275798810853511e-09"/>
+    </inertial>
+    <collision name="golf_ball__collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/058_golf_ball/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+    <visual name="golf_ball__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/058_golf_ball/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>

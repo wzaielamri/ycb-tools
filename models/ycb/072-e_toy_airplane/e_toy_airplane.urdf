@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<robot name="e_toy_airplane">
+  <link name="e_toy_airplane__link">
+    <inertial>
+      <mass value="1.8408711748142497e-05"/>
+      <origin xyz="-0.01546 -0.00775  0.02186" rpy="0.00331 0.0104  0.17724"/>
+      <inertia ixx="5.511554416878706e-09" ixy="-5.105506235340263e-25" ixz="-1.0253153048024117e-25" iyy="5.468879870174312e-09" iyz="8.35869510436555e-25" izz="1.6889584451051317e-09"/>
+    </inertial>
+    <collision name="e_toy_airplane__collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/072-e_toy_airplane/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+    <visual name="e_toy_airplane__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/072-e_toy_airplane/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>

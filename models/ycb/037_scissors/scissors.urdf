@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<robot name="scissors">
+  <link name="scissors__link">
+    <inertial>
+      <mass value="4.680136717925133e-05"/>
+      <origin xyz="0.01459 0.00316 0.0074" rpy="1.11247 -1.55904 -2.99352"/>
+      <inertia ixx="8.694331860937042e-08" ixy="-1.6342435413225145e-24" ixz="-3.4497323146766135e-24" iyy="7.102096251831457e-08" iyz="4.6463192564111855e-24" izz="1.693256625130799e-08"/>
+    </inertial>
+    <collision name="scissors__collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/037_scissors/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+    <visual name="scissors__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/037_scissors/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>

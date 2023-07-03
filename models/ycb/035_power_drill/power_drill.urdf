@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<robot name="power_drill">
+  <link name="power_drill__link">
+    <inertial>
+      <mass value="0.0005808968085666661"/>
+      <origin xyz="-0.03071  0.02435  0.02356" rpy="-2.08614 -1.53097  0.68224"/>
+      <inertia ixx="3.1058012590273494e-06" ixy="7.168315100412056e-23" ixz="-6.980940055005954e-22" iyy="2.3564289011284853e-06" iyz="-2.6244055342600015e-22" izz="9.038816388046968e-07"/>
+    </inertial>
+    <collision name="power_drill__collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/035_power_drill/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+    <visual name="power_drill__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/035_power_drill/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>

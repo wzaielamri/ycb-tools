@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<robot name="pudding_box">
+  <link name="pudding_box__link">
+    <inertial>
+      <mass value="0.00034177208377669197"/>
+      <origin xyz="0.00151 0.01879 0.01865" rpy="-2.84684 -1.54695 -2.95061"/>
+      <inertia ixx="5.514501243481536e-07" ixy="-2.5122907294555473e-23" ixz="3.0872621709290617e-24" iyy="3.7221284971339426e-07" iyz="-2.5537610425232615e-23" izz="2.5064605144990336e-07"/>
+    </inertial>
+    <collision name="pudding_box__collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/008_pudding_box/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+    <visual name="pudding_box__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/008_pudding_box/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>

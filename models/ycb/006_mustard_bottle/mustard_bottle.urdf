@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<robot name="mustard_bottle">
+  <link name="mustard_bottle__link">
+    <inertial>
+      <mass value="0.0006120391571167176"/>
+      <origin xyz="-0.01505 -0.0231   0.07504" rpy="3.13977 -0.00689 -1.97079"/>
+      <inertia ixx="1.6697164243557216e-06" ixy="1.4727230398373367e-22" ixz="2.0113906372359322e-23" iyy="1.4549960053833634e-06" iyz="-5.3624603797522466e-24" izz="4.292886378673635e-07"/>
+    </inertial>
+    <collision name="mustard_bottle__collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/006_mustard_bottle/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+    <visual name="mustard_bottle__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/006_mustard_bottle/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>

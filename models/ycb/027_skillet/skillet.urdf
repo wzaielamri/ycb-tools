@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<robot name="skillet">
+  <link name="skillet__link">
+    <inertial>
+      <mass value="0.0007265108399896241"/>
+      <origin xyz="-0.00676  0.02451  0.03831" rpy="2.64426 -1.47578  2.24466"/>
+      <inertia ixx="1.10036199895909e-05" ixy="4.835974838554707e-22" ixz="6.095894653037414e-22" iyy="7.99015679927966e-06" iyz="-1.6817877322972403e-22" izz="4.465272736962801e-06"/>
+    </inertial>
+    <collision name="skillet__collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/027_skillet/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+    <visual name="skillet__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/027_skillet/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>

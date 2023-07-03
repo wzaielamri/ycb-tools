@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<robot name="plum">
+  <link name="plum__link">
+    <inertial>
+      <mass value="8.61776383862375e-05"/>
+      <origin xyz="-0.00774  0.01949  0.02372" rpy="-1.69033 -0.84136  1.82431"/>
+      <inertia ixx="2.717806007481321e-08" ixy="4.8360291639603174e-24" ixz="-4.681014431864738e-25" iyy="2.6210855583690036e-08" iyz="-9.661545140930581e-26" izz="2.5065263854215255e-08"/>
+    </inertial>
+    <collision name="plum__collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/018_plum/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+    <visual name="plum__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/018_plum/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>

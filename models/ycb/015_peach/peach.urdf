@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<robot name="peach">
+  <link name="peach__link">
+    <inertial>
+      <mass value="0.00011721380481271601"/>
+      <origin xyz="-0.01504  0.00678  0.02826" rpy="-1.50665 -0.80694 -0.66994"/>
+      <inertia ixx="4.5876541133456013e-08" ixy="6.727621415090927e-24" ixz="-8.290148986448288e-24" iyy="4.4440446186663625e-08" iyz="-3.4201692364744926e-24" izz="4.098274622378104e-08"/>
+    </inertial>
+    <collision name="peach__collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/015_peach/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+    <visual name="peach__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/015_peach/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>

@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<robot name="pear">
+  <link name="pear__link">
+    <inertial>
+      <mass value="0.000192218040717369"/>
+      <origin xyz="-0.03254  0.01107  0.03004" rpy="2.04054 -0.74235  2.74463"/>
+      <inertia ixx="1.307113540605603e-07" ixy="-5.48650884124453e-24" ixz="-9.961607781998219e-24" iyy="1.280852023276797e-07" iyz="-8.760657574322727e-25" izz="7.720902655923691e-08"/>
+    </inertial>
+    <collision name="pear__collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/016_pear/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+    <visual name="pear__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/016_pear/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>

@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<robot name="sponge">
+  <link name="sponge__link">
+    <inertial>
+      <mass value="0.00011574257606853668"/>
+      <origin xyz="-0.01584  0.01152  0.00937" rpy="-0.98249  1.55237  0.57763"/>
+      <inertia ixx="1.4790695935686624e-07" ixy="-6.546512016924604e-26" ixz="1.352044653776286e-23" iyy="1.0220649167865078e-07" iyz="-9.375642998693167e-26" izz="5.040066218025438e-08"/>
+    </inertial>
+    <collision name="sponge__collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/026_sponge/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+    <visual name="sponge__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/026_sponge/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>

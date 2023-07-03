@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<robot name="mini_soccer_ball">
+  <link name="mini_soccer_ball__link">
+    <inertial>
+      <mass value="0.0010465229343801772"/>
+      <origin xyz="-0.00591  0.01153  0.06131" rpy="2.95329  0.72874 -2.11748"/>
+      <inertia ixx="1.709206540462109e-06" ixy="1.2623876032276404e-22" ixz="1.4968817273423504e-22" iyy="1.654096012590147e-06" iyz="-2.8939928621596967e-23" izz="1.6272467028315046e-06"/>
+    </inertial>
+    <collision name="mini_soccer_ball__collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/053_mini_soccer_ball/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+    <visual name="mini_soccer_ball__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/053_mini_soccer_ball/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>

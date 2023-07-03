@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<robot name="potted_meat_can">
+  <link name="potted_meat_can__link">
+    <inertial>
+      <mass value="0.0003541315255998319"/>
+      <origin xyz="-0.03284 -0.02635  0.03783" rpy="-1.57743 -0.01076  1.62587"/>
+      <inertia ixx="4.287366513749583e-07" ixy="-3.523230610574534e-23" ixz="-6.42864356711676e-24" iyy="3.228086963634995e-07" iyz="-7.370448672335376e-25" izz="2.4925393166117206e-07"/>
+    </inertial>
+    <collision name="potted_meat_can__collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/010_potted_meat_can/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+    <visual name="potted_meat_can__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/010_potted_meat_can/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>

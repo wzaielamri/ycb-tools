@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<robot name="tomato_soup_can">
+  <link name="tomato_soup_can__link">
+    <inertial>
+      <mass value="0.00031936054545834833"/>
+      <origin xyz="-0.00934  0.08422  0.05002" rpy="-0.00499  0.00247 -1.51709"/>
+      <inertia ixx="3.2272839429433593e-07" ixy="-1.582045780223932e-24" ixz="-8.588662701489247e-23" iyy="3.2020488336471465e-07" iyz="-4.7022627823644124e-26" izz="1.755401283675836e-07"/>
+    </inertial>
+    <collision name="tomato_soup_can__collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/005_tomato_soup_can/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+    <visual name="tomato_soup_can__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/005_tomato_soup_can/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>

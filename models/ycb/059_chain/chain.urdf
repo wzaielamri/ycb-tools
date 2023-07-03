@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<robot name="chain">
+  <link name="chain__link">
+    <inertial>
+      <mass value="0.00011189363696047932"/>
+      <origin xyz="-0.03427  0.01817  0.00901" rpy="1.05721 -1.5612  -3.05166"/>
+      <inertia ixx="1.3307905578269502e-06" ixy="1.2069191756166794e-23" ixz="2.9542720316208676e-23" iyy="7.338900067550511e-07" iyz="-2.1502574100579633e-23" izz="6.02574031498334e-07"/>
+    </inertial>
+    <collision name="chain__collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/059_chain/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+    <visual name="chain__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/059_chain/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>

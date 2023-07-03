@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<robot name="phillips_screwdriver">
+  <link name="phillips_screwdriver__link">
+    <inertial>
+      <mass value="7.700548566461367e-05"/>
+      <origin xyz="0.00266 0.02222 0.01637" rpy="1.65221 -1.00567 -1.17448"/>
+      <inertia ixx="1.0868078692455589e-07" ixy="-8.472643489348818e-24" ixz="4.2264085498414324e-24" iyy="1.0863412549561542e-07" iyz="-1.0054241296747086e-23" izz="8.53821986114339e-09"/>
+    </inertial>
+    <collision name="phillips_screwdriver__collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/043_phillips_screwdriver/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+    <visual name="phillips_screwdriver__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/043_phillips_screwdriver/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>

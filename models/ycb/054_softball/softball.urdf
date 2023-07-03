@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<robot name="softball">
+  <link name="softball__link">
+    <inertial>
+      <mass value="0.00046265685017129814"/>
+      <origin xyz="-0.01965  0.01088  0.04681" rpy="0.61974  1.46925 -0.80687"/>
+      <inertia ixx="4.2804008442274943e-07" ixy="3.1472957142322953e-24" ixz="1.070812201370726e-23" iyy="4.2650617700135237e-07" iyz="-4.2650387275588773e-23" izz="4.2389962645739265e-07"/>
+    </inertial>
+    <collision name="softball__collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/054_softball/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+    <visual name="softball__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/054_softball/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>

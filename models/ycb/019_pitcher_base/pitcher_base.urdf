@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<robot name="pitcher_base">
+  <link name="pitcher_base__link">
+    <inertial>
+      <mass value="0.0025490222330232276"/>
+      <origin xyz="-0.01341  0.03347  0.12263" rpy="3.12781 -0.00451 -0.83359"/>
+      <inertia ixx="1.3427327160192555e-05" ixy="-2.876406248458608e-21" ixz="-1.534505074579256e-21" iyy="1.3268310851490313e-05" iyz="-3.333806366136871e-22" izz="4.702625186734815e-06"/>
+    </inertial>
+    <collision name="pitcher_base__collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/019_pitcher_base/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+    <visual name="pitcher_base__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/019_pitcher_base/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>

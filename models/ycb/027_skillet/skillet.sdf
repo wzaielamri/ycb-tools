@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="skillet">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.006763572224230864 0.02451108587229952 0.038316351596919485 2.6442693263922106 -1.4757830983766898 2.244660874521236</pose> 
+        <mass>0.0007265108399896241</mass>
+        <inertia>
+          <ixx>1.10036199895909e-05</ixx>
+          <ixy>4.835974838554707e-22</ixy>
+          <ixz>6.095894653037414e-22</ixz>
+          <iyy>7.99015679927966e-06</iyy>
+          <iyz>-1.6817877322972403e-22</iyz>
+          <izz>4.465272736962801e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://027_skillet/google_16k/textured.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://027_skillet/google_16k/textured.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://027_skillet/skillet.material</uri>
+            <name>skillet</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

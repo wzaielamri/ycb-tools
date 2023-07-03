@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<robot name="d_lego_duplo">
+  <link name="d_lego_duplo__link">
+    <inertial>
+      <mass value="3.797934400201833e-05"/>
+      <origin xyz="-0.02022 -0.02991  0.02277" rpy="-0.24335  1.30507 -1.11377"/>
+      <inertia ixx="9.867652963170607e-09" ixy="-7.932861762049387e-26" ixz="-1.1723276010434586e-25" iyy="9.612165113870198e-09" iyz="-1.08063387389241e-24" izz="6.658495774366488e-09"/>
+    </inertial>
+    <collision name="d_lego_duplo__collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/073-d_lego_duplo/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+    <visual name="d_lego_duplo__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/073-d_lego_duplo/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>

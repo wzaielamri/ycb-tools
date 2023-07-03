@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<robot name="orange">
+  <link name="orange__link">
+    <inertial>
+      <mass value="0.00020272265250081666"/>
+      <origin xyz="-0.00714 -0.01836  0.03363" rpy="-1.8314   0.38661  2.97317"/>
+      <inertia ixx="1.0967878631910061e-07" ixy="-8.411786053196317e-24" ixz="7.872260456836049e-24" iyy="1.0738896725229531e-07" iyz="1.8061890457860077e-23" izz="1.065750028785584e-07"/>
+    </inertial>
+    <collision name="orange__collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/017_orange/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+    <visual name="orange__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/017_orange/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>

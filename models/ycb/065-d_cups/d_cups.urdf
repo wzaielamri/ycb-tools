@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<robot name="d_cups">
+  <link name="d_cups__link">
+    <inertial>
+      <mass value="3.514875616910449e-05"/>
+      <origin xyz="-0.01837 -0.05978  0.03158" rpy="2.72151  0.41574 -2.76069"/>
+      <inertia ixx="2.9013789460339997e-08" ixy="-9.816524782460307e-25" ixz="2.720440180762915e-24" iyy="2.8710276321267215e-08" iyz="-3.641290841518387e-24" izz="2.6584885497760324e-08"/>
+    </inertial>
+    <collision name="d_cups__collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/065-d_cups/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+    <visual name="d_cups__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/065-d_cups/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>

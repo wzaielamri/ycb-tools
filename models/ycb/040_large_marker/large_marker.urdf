@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<robot name="large_marker">
+  <link name="large_marker__link">
+    <inertial>
+      <mass value="2.7399944924772163e-05"/>
+      <origin xyz="-0.03572 -0.00788  0.00901" rpy="1.5699  -0.92718 -3.12007"/>
+      <inertia ixx="3.0985440909539754e-08" ixy="-7.295464250359048e-24" ixz="-1.4878080507106219e-25" iyy="3.098119463302474e-08" iyz="1.3908448358072971e-25" izz="1.0631513526588352e-09"/>
+    </inertial>
+    <collision name="large_marker__collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/040_large_marker/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+    <visual name="large_marker__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/zai/ros_ws/utils_ws/src/ycb-tools/models/ycb/040_large_marker/google_16k/textured.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>
